@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="208.321">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="17.325">
+        <system-out><![CDATA[Given user goes to register page............................................passed
+When user selects gender type male or female................................passed
+And user enters first name and last name....................................passed
+And user enters the date of birth...........................................passed
+And user enters the email...................................................passed
+And user enters the password................................................passed
+And user enters the confirm password........................................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name=": user could login with valid email and password" time="12.742">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid test@example.com and P@ssw0rd....................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="12.554">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with invalid higoodbye@example.com and password.............passed
+And user press on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F03_currencies | users could check the appear of currency symbol" name="user could select select euro currency and check the appear of its symbol" time="9.952">
+        <system-out><![CDATA[When user select currency from the dropdown list............................passed
+Then user check the appear of Euro symbol...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | users could search for products" name="user could search using product name" time="11.987">
+        <system-out><![CDATA[Given I search for "book"...................................................passed
+Then successful search results..............................................passed
+And each result contains the search word "book".............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | users could search for products" name="user could search using product name 2" time="13.29">
+        <system-out><![CDATA[Given I search for "laptop".................................................passed
+Then successful search results..............................................passed
+And each result contains the search word "laptop"...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | users could search for products" name="user could search using product name 3" time="12.002">
+        <system-out><![CDATA[Given I search for "nike"...................................................passed
+Then successful search results..............................................passed
+And each result contains the search word "nike".............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | users could search for products" name="user could search for product using sku" time="8.66">
+        <system-out><![CDATA[Given I search for "SCI_FAITH"..............................................passed
+And click on the product after search.......................................passed
+Then the result contains the sku "SCI_FAITH"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | users could search for products" name="user could search for product using sku 2" time="9.063">
+        <system-out><![CDATA[Given I search for "APPLE_CAM"..............................................passed
+And click on the product after search.......................................passed
+Then the result contains the sku "APPLE_CAM"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F04_Search | users could search for products" name="user could search for product using sku 3" time="9.52">
+        <system-out><![CDATA[Given I search for "SF_PRO_11"..............................................passed
+And click on the product after search.......................................passed
+Then the result contains the sku "SF_PRO_11"................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F05_hoverCategories | user could hover categories and select sub category" name="user could hover categories" time="10.77">
+        <system-out><![CDATA[Given user hover category and select subcategory............................passed
+Then assert sub category....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Slider pages" name="first slider is clickable on home page" time="7.98">
+        <system-out><![CDATA[When click on slider........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Slider pages" name="second slider is clickable on home page" time="11.624">
+        <system-out><![CDATA[When click on second slider.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_followUs | user opens FB,Twitter,rss,youtube" name="User opens FaceBook link" time="10.141">
+        <system-out><![CDATA[Given user opens facebook link..............................................passed
+Then "https://www.facebook.com/nopCommerce" FB is opened in new tab.........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_followUs | user opens FB,Twitter,rss,youtube" name="user opens twitter link" time="12.957">
+        <system-out><![CDATA[Given user opens twitter link...............................................passed
+Then "https://twitter.com/nopCommerce" Tw is opened in new tab..............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_followUs | user opens FB,Twitter,rss,youtube" name="user opens youtube link" time="14.357">
+        <system-out><![CDATA[Given user opens youtube link...............................................passed
+Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_WhishList | adding an item to the wishlist" name="adding an item to the wishlist" time="8.988">
+        <system-out><![CDATA[Given user at homepage and adding the item to the wishlist..................passed
+Then assert the item is added...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F08_WhishList | adding an item to the wishlist" name="checking the Qty value of items in the wishlist page" time="13.606">
+        <system-out><![CDATA[Given user at the wishlist page.............................................passed
+Then check the Qty value and verify it is bigger than 0.....................passed
+]]></system-out>
+    </testcase>
+</testsuite>
